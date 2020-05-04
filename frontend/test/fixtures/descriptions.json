@@ -1,0 +1,9 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "query2": "groupValidSameKeys.json modified per UI",
+    "query3": "orderMultipleKeyOrdering",
+    "query4": "ANDvalid",
+    "query5": "ORvalid",
+    "query6": "NOTvalid",
+    "query7": "two NOTs in AND"
+}

@@ -1,0 +1,34 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_seats",
+                "fullname"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["rooms_seats",
+                    "fullname"
+                    ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_seats"
+            ],
+            "APPLY": [
+                {
+                    "fullname": {
+                        "COUNT": "rooms_fullname"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": true,
+        "result":[{"rooms_seats":503,"fullname":1},{"rooms_seats":442,"fullname":1},{"rooms_seats":426,"fullname":1},{"rooms_seats":375,"fullname":1},{"rooms_seats":350,"fullname":2},{"rooms_seats":325,"fullname":1},{"rooms_seats":299,"fullname":1},{"rooms_seats":280,"fullname":1},{"rooms_seats":275,"fullname":1},{"rooms_seats":265,"fullname":1},{"rooms_seats":260,"fullname":1},{"rooms_seats":257,"fullname":1},{"rooms_seats":250,"fullname":1},{"rooms_seats":240,"fullname":1},{"rooms_seats":236,"fullname":1},{"rooms_seats":228,"fullname":1},{"rooms_seats":225,"fullname":1},{"rooms_seats":224,"fullname":1},{"rooms_seats":205,"fullname":1},{"rooms_seats":200,"fullname":2},{"rooms_seats":190,"fullname":1},{"rooms_seats":188,"fullname":1},{"rooms_seats":187,"fullname":1},{"rooms_seats":183,"fullname":1},{"rooms_seats":181,"fullname":2},{"rooms_seats":167,"fullname":1},{"rooms_seats":160,"fullname":2},{"rooms_seats":155,"fullname":1},{"rooms_seats":154,"fullname":1},{"rooms_seats":150,"fullname":3},{"rooms_seats":144,"fullname":1},{"rooms_seats":136,"fullname":1},{"rooms_seats":131,"fullname":1},{"rooms_seats":125,"fullname":1},{"rooms_seats":123,"fullname":1},{"rooms_seats":120,"fullname":2},{"rooms_seats":114,"fullname":1},{"rooms_seats":112,"fullname":1},{"rooms_seats":108,"fullname":1},{"rooms_seats":106,"fullname":1},{"rooms_seats":102,"fullname":1},{"rooms_seats":100,"fullname":3},{"rooms_seats":99,"fullname":2},{"rooms_seats":94,"fullname":3},{"rooms_seats":90,"fullname":2},{"rooms_seats":88,"fullname":1},{"rooms_seats":84,"fullname":1},{"rooms_seats":80,"fullname":4},{"rooms_seats":78,"fullname":1},{"rooms_seats":76,"fullname":1},{"rooms_seats":75,"fullname":1},{"rooms_seats":74,"fullname":1},{"rooms_seats":72,"fullname":4},{"rooms_seats":70,"fullname":2},{"rooms_seats":68,"fullname":2},{"rooms_seats":66,"fullname":1},{"rooms_seats":65,"fullname":2},{"rooms_seats":63,"fullname":1},{"rooms_seats":62,"fullname":1},{"rooms_seats":60,"fullname":7},{"rooms_seats":58,"fullname":1},{"rooms_seats":56,"fullname":1},{"rooms_seats":55,"fullname":1},{"rooms_seats":54,"fullname":3},{"rooms_seats":53,"fullname":1},{"rooms_seats":51,"fullname":1}]}

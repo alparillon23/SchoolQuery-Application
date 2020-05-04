@@ -1,0 +1,22 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_type",
+                "rooms_seats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["rooms_seats"]
+
+            }
+        }},
+        "isQueryValid": true,
+        "result":[{"rooms_type":"Tiered Large Group","rooms_seats":503},{"rooms_type":"Open Design General Purpose","rooms_seats":442},{"rooms_type":"Tiered Large Group","rooms_seats":426},{"rooms_type":"Tiered Large Group","rooms_seats":375},{"rooms_type":"Tiered Large Group","rooms_seats":350},{"rooms_type":"Tiered Large Group","rooms_seats":350},{"rooms_type":"Tiered Large Group","rooms_seats":350},{"rooms_type":"Tiered Large Group","rooms_seats":325},{"rooms_type":"TBD","rooms_seats":299},{"rooms_type":"TBD","rooms_seats":299},{"rooms_type":"TBD","rooms_seats":299},{"rooms_type":"Tiered Large Group","rooms_seats":280},{"rooms_type":"Tiered Large Group","rooms_seats":275},{"rooms_type":"Tiered Large Group","rooms_seats":265},{"rooms_type":"Tiered Large Group","rooms_seats":260},{"rooms_type":"Tiered Large Group","rooms_seats":257},{"rooms_type":"Tiered Large Group","rooms_seats":250},{"rooms_type":"Tiered Large Group","rooms_seats":240},{"rooms_type":"Tiered Large Group","rooms_seats":236},{"rooms_type":"Tiered Large Group","rooms_seats":228},{"rooms_type":"Tiered Large Group","rooms_seats":225},{"rooms_type":"Tiered Large Group","rooms_seats":224},{"rooms_type":"Tiered Large Group","rooms_seats":205},{"rooms_type":"Tiered Large Group","rooms_seats":200},{"rooms_type":"Tiered Large Group","rooms_seats":200},{"rooms_type":"Tiered Large Group","rooms_seats":190},{"rooms_type":"Tiered Large Group","rooms_seats":190},{"rooms_type":"Tiered Large Group","rooms_seats":188},{"rooms_type":"Tiered Large Group","rooms_seats":187},{"rooms_type":"Tiered Large Group","rooms_seats":183},{"rooms_type":"Tiered Large Group","rooms_seats":181},{"rooms_type":"Tiered Large Group","rooms_seats":181},{"rooms_type":"Tiered Large Group","rooms_seats":167},{"rooms_type":"Tiered Large Group","rooms_seats":160},{"rooms_type":"Tiered Large Group","rooms_seats":160},{"rooms_type":"Tiered Large Group","rooms_seats":155},{"rooms_type":"Tiered Large Group","rooms_seats":154},{"rooms_type":"Tiered Large Group","rooms_seats":150},{"rooms_type":"Tiered Large Group","rooms_seats":150},{"rooms_type":"Tiered Large Group","rooms_seats":150},{"rooms_type":"Tiered Large Group","rooms_seats":150},{"rooms_type":"Tiered Large Group","rooms_seats":144},{"rooms_type":"Tiered Large Group","rooms_seats":136},{"rooms_type":"Tiered Large Group","rooms_seats":131},{"rooms_type":"Tiered Large Group","rooms_seats":125},{"rooms_type":"Tiered Large Group","rooms_seats":123},{"rooms_type":"Tiered Large Group","rooms_seats":120},{"rooms_type":"Tiered Large Group","rooms_seats":120},{"rooms_type":"Tiered Large Group","rooms_seats":120},{"rooms_type":"Tiered Large Group","rooms_seats":120},{"rooms_type":"Tiered Large Group","rooms_seats":114},{"rooms_type":"Tiered Large Group","rooms_seats":114},{"rooms_type":"Open Design General Purpose","rooms_seats":112},{"rooms_type":"Case Style","rooms_seats":108},{"rooms_type":"Case Style","rooms_seats":108},{"rooms_type":"Tiered Large Group","rooms_seats":106},{"rooms_type":"Tiered Large Group","rooms_seats":102},{"rooms_type":"Tiered Large Group","rooms_seats":100},{"rooms_type":"Open Design General Purpose","rooms_seats":100},{"rooms_type":"Case Style","rooms_seats":100},{"rooms_type":"Tiered Large Group","rooms_seats":99},{"rooms_type":"Tiered Large Group","rooms_seats":99}]
+}

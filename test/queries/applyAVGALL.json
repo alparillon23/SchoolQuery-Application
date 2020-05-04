@@ -1,0 +1,34 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 93
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "year"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["courses_dept",
+                    "year"
+                    ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "year": {
+                        "AVG": "courses_year"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": true,
+        "result":[{"courses_dept":"thtr","year":1956.25},{"courses_dept":"surg","year":1956},{"courses_dept":"stat","year":1957},{"courses_dept":"spph","year":1963.03},{"courses_dept":"span","year":1954},{"courses_dept":"sowk","year":1981.55},{"courses_dept":"rhsc","year":2008.5},{"courses_dept":"psyc","year":1955.8},{"courses_dept":"plan","year":1954.88},{"courses_dept":"phys","year":1956.25},{"courses_dept":"phth","year":1956.75},{"courses_dept":"phrm","year":1957.5},{"courses_dept":"phil","year":2010},{"courses_dept":"phar","year":1976},{"courses_dept":"pcth","year":1900},{"courses_dept":"path","year":2008},{"courses_dept":"onco","year":1956.5},{"courses_dept":"obst","year":1900},{"courses_dept":"nurs","year":1957.15},{"courses_dept":"musc","year":1958.2},{"courses_dept":"mtrl","year":1966.4},{"courses_dept":"mine","year":1963.86},{"courses_dept":"midw","year":1956.5},{"courses_dept":"micb","year":1956.17},{"courses_dept":"medi","year":1967.6},{"courses_dept":"medg","year":1954},{"courses_dept":"mech","year":1955.5},{"courses_dept":"math","year":1953.66},{"courses_dept":"lled","year":1958},{"courses_dept":"libr","year":1957.5},{"courses_dept":"kin","year":1972.18},{"courses_dept":"hinu","year":1953.5},{"courses_dept":"hgse","year":1957.1},{"courses_dept":"gpp","year":1957.5},{"courses_dept":"frst","year":1976.33},{"courses_dept":"fnh","year":2015},{"courses_dept":"fish","year":1954.5},{"courses_dept":"fipr","year":1957.5},{"courses_dept":"etec","year":1973.16},{"courses_dept":"epse","year":1967.39},{"courses_dept":"eosc","year":1957},{"courses_dept":"elec","year":1976.67},{"courses_dept":"eece","year":1955.2},{"courses_dept":"educ","year":2004.08},{"courses_dept":"edst","year":1959.32},{"courses_dept":"edcp","year":1967.53},{"courses_dept":"econ","year":1955.88},{"courses_dept":"eced","year":1975.33},{"courses_dept":"dhyg","year":2012.5},{"courses_dept":"dent","year":1956},{"courses_dept":"crwr","year":1986.53},{"courses_dept":"cpsc","year":1955.2},{"courses_dept":"comm","year":1954.83},{"courses_dept":"cnps","year":1961.72},{"courses_dept":"civl","year":1956},{"courses_dept":"chbe","year":1957.17},{"courses_dept":"cell","year":1955.25},{"courses_dept":"ceen","year":2013},{"courses_dept":"ccst","year":1955},{"courses_dept":"bmeg","year":1956.5},{"courses_dept":"biol","year":1957.5},{"courses_dept":"biof","year":1956.5},{"courses_dept":"audi","year":1955.73},{"courses_dept":"arst","year":1955},{"courses_dept":"apsc","year":2008.43},{"courses_dept":"adhe","year":2015.5},{"courses_dept":"aanb","year":1957.5}]}

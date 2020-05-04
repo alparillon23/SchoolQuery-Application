@@ -1,0 +1,13 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": 1
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

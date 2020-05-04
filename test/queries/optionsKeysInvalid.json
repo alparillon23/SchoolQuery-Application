@@ -1,0 +1,20 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg",
+            "RANDOM":"random"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

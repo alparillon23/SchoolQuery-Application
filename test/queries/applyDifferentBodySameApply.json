@@ -1,0 +1,39 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_type",
+                "hello",
+                "goodbye"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["rooms_type"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_type"
+            ],
+            "APPLY": [
+                {
+                    "hello": {
+                        "MAX": "rooms_lat"
+                    }
+                },
+                {
+                    "goodbye": {
+                        "MAX": "rooms_lat"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": true,
+        "result":[{"rooms_type":"Tiered Large Group","hello":49.26826,"goodbye":49.26826},{"rooms_type":"TBD","hello":49.2683,"goodbye":49.2683},{"rooms_type":"Open Design General Purpose","hello":49.26766,"goodbye":49.26766},{"rooms_type":"Case Style","hello":49.27106,"goodbye":49.27106}]
+}

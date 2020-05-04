@@ -1,0 +1,35 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "hello",
+                "goodbye"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_pass"
+            ],
+            "APPLY": [
+                {
+                    "hello": {
+                        "SUM": "courses_pass"
+                    }
+                },
+                {
+                    "goodbye": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": true,
+    "result":[{"courses_dept":"cnps","hello":16,"goodbye":99.19},{"courses_dept":"cnps","hello":30,"goodbye":97.47},{"courses_dept":"crwr","hello":2,"goodbye":98},{"courses_dept":"educ","hello":14,"goodbye":97.5},{"courses_dept":"eece","hello":24,"goodbye":98.75},{"courses_dept":"epse","hello":12,"goodbye":98.08},{"courses_dept":"epse","hello":10,"goodbye":98.7},{"courses_dept":"epse","hello":22,"goodbye":98.36},{"courses_dept":"epse","hello":28,"goodbye":97.29},{"courses_dept":"epse","hello":25,"goodbye":98.8},{"courses_dept":"epse","hello":68,"goodbye":97.41},{"courses_dept":"epse","hello":48,"goodbye":98.58},{"courses_dept":"epse","hello":44,"goodbye":97.09},{"courses_dept":"epse","hello":18,"goodbye":97.67},{"courses_dept":"epse","hello":16,"goodbye":97.69},{"courses_dept":"math","hello":8,"goodbye":97.25},{"courses_dept":"math","hello":18,"goodbye":99.78},{"courses_dept":"math","hello":42,"goodbye":97.48},{"courses_dept":"math","hello":22,"goodbye":97.09},{"courses_dept":"nurs","hello":56,"goodbye":98.21},{"courses_dept":"nurs","hello":34,"goodbye":97.53},{"courses_dept":"nurs","hello":32,"goodbye":98.5},{"courses_dept":"nurs","hello":48,"goodbye":97.33},{"courses_dept":"spph","hello":164,"goodbye":98.98}]}

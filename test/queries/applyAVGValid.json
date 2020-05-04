@@ -1,0 +1,39 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "hello",
+                "goodbye"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["goodbye", "hello"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "hello": {
+                        "AVG": "courses_avg"
+                    }
+                },
+                {
+                    "goodbye": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": true,
+        "result":[{"courses_dept":"fipr","hello":96.4,"goodbye":96.4},{"courses_dept":"aanb","hello":94.44,"goodbye":94.44},{"courses_dept":"ccst","hello":93.67,"goodbye":93.67},{"courses_dept":"gpp","hello":93.04,"goodbye":93.04},{"courses_dept":"hist","hello":93,"goodbye":93},{"courses_dept":"itst","hello":92.88,"goodbye":92.75},{"courses_dept":"comm","hello":94.06,"goodbye":92.45},{"courses_dept":"germ","hello":92.25,"goodbye":92.25},{"courses_dept":"ling","hello":92.25,"goodbye":92.25},{"courses_dept":"larc","hello":92.44,"goodbye":92.07},{"courses_dept":"phrm","hello":93.14,"goodbye":92.06},{"courses_dept":"atsc","hello":92,"goodbye":92},{"courses_dept":"apbi","hello":91.86,"goodbye":91.86},{"courses_dept":"elec","hello":93.08,"goodbye":91.83},{"courses_dept":"anat","hello":91.83,"goodbye":91.67},{"courses_dept":"span","hello":92.42,"goodbye":91.6},{"courses_dept":"biof","hello":92.24,"goodbye":91.5},{"courses_dept":"ital","hello":91.5,"goodbye":91.5},{"courses_dept":"babs","hello":91.38,"goodbye":91.38},{"courses_dept":"hunu","hello":91.33,"goodbye":91.33},{"courses_dept":"astr","hello":91.33,"goodbye":91.25},{"courses_dept":"hinu","hello":92.48,"goodbye":91},{"courses_dept":"anth","hello":91.68,"goodbye":90.92},{"courses_dept":"bmeg","hello":92.79,"goodbye":90.9},{"courses_dept":"lfs","hello":90.83,"goodbye":90.83},{"courses_dept":"crwr","hello":93.9,"goodbye":90.8},{"courses_dept":"libr","hello":92.09,"goodbye":90.75},{"courses_dept":"name","hello":91.16,"goodbye":90.75},{"courses_dept":"bota","hello":91.24,"goodbye":90.71},{"courses_dept":"soil","hello":91.07,"goodbye":90.71},{"courses_dept":"food","hello":90.68,"goodbye":90.68},{"courses_dept":"nrsc","hello":90.67,"goodbye":90.67},{"courses_dept":"midw","hello":92.57,"goodbye":90.62},{"courses_dept":"medi","hello":91.9,"goodbye":90.6},{"courses_dept":"onco","hello":91.6,"goodbye":90.58},{"courses_dept":"rhsc","hello":91.52,"goodbye":90.5},{"courses_dept":"chil","hello":91.46,"goodbye":90.5},{"courses_dept":"cohr","hello":90.46,"goodbye":90.46},{"courses_dept":"fnh","hello":91.44,"goodbye":90.45},{"courses_dept":"fopr","hello":90.63,"goodbye":90.44},{"courses_dept":"isci","hello":90.44,"goodbye":90.44},{"courses_dept":"eced","hello":92.22,"goodbye":90.43},{"courses_dept":"chem","hello":91.39,"goodbye":90.43},{"courses_dept":"ceen","hello":92.1,"goodbye":90.4},{"courses_dept":"rsot","hello":91.05,"goodbye":90.39},{"courses_dept":"obst","hello":92.11,"goodbye":90.33},{"courses_dept":"micb","hello":91.95,"goodbye":90.33},{"courses_dept":"phil","hello":91.69,"goodbye":90.33},{"courses_dept":"arth","hello":91.55,"goodbye":90.33},{"courses_dept":"hgse","hello":92.75,"goodbye":90.29},{"courses_dept":"stat","hello":92.1,"goodbye":90.29},{"courses_dept":"sans","hello":91.39,"goodbye":90.29},{"courses_dept":"gsat","hello":90.29,"goodbye":90.29},{"courses_dept":"arst","hello":93.14,"goodbye":90.27},{"courses_dept":"cell","hello":91.83,"goodbye":90.25},{"courses_dept":"dent","hello":91.33,"goodbye":90.25},{"courses_dept":"math","hello":92.65,"goodbye":90.24},{"courses_dept":"bams","hello":90.85,"goodbye":90.23},{"courses_dept":"chbe","hello":91.82,"goodbye":90.21},{"courses_dept":"apsc","hello":92.51,"goodbye":90.2},{"courses_dept":"phys","hello":91.78,"goodbye":90.2},{"courses_dept":"zool","hello":91.61,"goodbye":90.2},{"courses_dept":"fish","hello":91.27,"goodbye":90.2},{"courses_dept":"libe","hello":90.75,"goodbye":90.19},{"courses_dept":"mech","hello":91.58,"goodbye":90.17},{"courses_dept":"biol","hello":91.38,"goodbye":90.17},{"courses_dept":"russ","hello":91.32,"goodbye":90.17},{"courses_dept":"mtrl","hello":93.2,"goodbye":90.14},{"courses_dept":"thtr","hello":91.5,"goodbye":90.14},{"courses_dept":"surg","hello":92.39,"goodbye":90.13},{"courses_dept":"mine","hello":92.33,"goodbye":90.13},{"courses_dept":"frst","hello":91.82,"goodbye":90.13},{"courses_dept":"spph","hello":92.67,"goodbye":90.11},{"courses_dept":"audi","hello":92.04,"goodbye":90.11},{"courses_dept":"cpsc","hello":92,"goodbye":90.11},{"courses_dept":"path","hello":91.24,"goodbye":90.11},{"courses_dept":"medg","hello":91.37,"goodbye":90.1},{"courses_dept":"lled","hello":91.36,"goodbye":90.1},{"courses_dept":"bioc","hello":90.31,"goodbye":90.1},{"courses_dept":"cons","hello":90.23,"goodbye":90.1},{"courses_dept":"musc","hello":92.93,"goodbye":90.08},{"courses_dept":"plan","hello":92,"goodbye":90.08},{"courses_dept":"eosc","hello":90.94,"goodbye":90.08},{"courses_dept":"educ","hello":92.35,"goodbye":90.07},{"courses_dept":"econ","hello":91.68,"goodbye":90.07},{"courses_dept":"eece","hello":91.63,"goodbye":90.07},{"courses_dept":"pcth","hello":91.35,"goodbye":90.07},{"courses_dept":"nurs","hello":93.18,"goodbye":90.06},{"courses_dept":"psyc","hello":92.24,"goodbye":90.06},{"courses_dept":"edst","hello":92.1,"goodbye":90.06},{"courses_dept":"sowk","hello":91.89,"goodbye":90.06},{"courses_dept":"edcp","hello":91.7,"goodbye":90.06},{"courses_dept":"civl","hello":91.24,"goodbye":90.06},{"courses_dept":"kin","hello":92.21,"goodbye":90.05},{"courses_dept":"epse","hello":92.84,"goodbye":90.03},{"courses_dept":"phth","hello":91.95,"goodbye":90.03},{"courses_dept":"etec","hello":91.94,"goodbye":90.03},{"courses_dept":"dhyg","hello":91.49,"goodbye":90.03},{"courses_dept":"cnps","hello":92.13,"goodbye":90.02},{"courses_dept":"adhe","hello":91.39,"goodbye":90.02},{"courses_dept":"phar","hello":91.24,"goodbye":90.02}]
+}

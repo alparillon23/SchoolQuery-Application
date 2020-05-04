@@ -1,0 +1,17 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_number": "100"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_lat"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_lat":49.26605},{"rooms_lat":49.2661},{"rooms_lat":49.266463},{"rooms_lat":49.26398},{"rooms_lat":49.26517}]
+}

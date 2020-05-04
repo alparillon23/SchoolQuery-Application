@@ -1,0 +1,39 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_type",
+                "hello",
+                "goodbye"
+            ],
+            "ORDER": {
+                "dir": "DOWN"
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_type"
+            ],
+            "APPLY": [
+                {
+                    "hello": {
+                        "SUM": "rooms_seats"
+                    }
+                },
+                {
+                    "goodbye": {
+                        "COUNT": "rooms_type"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": false,
+        "result": "InsightError"
+
+}

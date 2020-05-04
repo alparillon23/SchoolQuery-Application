@@ -1,0 +1,38 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_seats",
+                "hello",
+                "goodbye"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["goodbye", "hello", "rooms_seats"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_seats"
+            ],
+            "APPLY": [
+                {
+                    "hello": {
+                        "COUNT": "rooms_lon"
+                    }
+                },
+                {
+                    "goodbye": {
+                        "SUM": "rooms_lat"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": true,
+        "result":[{"rooms_seats":60,"hello":7,"goodbye":492.65},{"rooms_seats":54,"hello":3,"goodbye":394.12},{"rooms_seats":65,"hello":2,"goodbye":295.59},{"rooms_seats":72,"hello":4,"goodbye":295.57},{"rooms_seats":150,"hello":3,"goodbye":197.07},{"rooms_seats":78,"hello":1,"goodbye":197.07},{"rooms_seats":80,"hello":4,"goodbye":197.06},{"rooms_seats":120,"hello":2,"goodbye":197.06},{"rooms_seats":68,"hello":2,"goodbye":197.06},{"rooms_seats":100,"hello":3,"goodbye":147.8},{"rooms_seats":94,"hello":3,"goodbye":147.8},{"rooms_seats":90,"hello":2,"goodbye":147.8},{"rooms_seats":70,"hello":2,"goodbye":147.8},{"rooms_seats":299,"hello":1,"goodbye":147.8},{"rooms_seats":350,"hello":2,"goodbye":147.79},{"rooms_seats":108,"hello":1,"goodbye":98.54},{"rooms_seats":181,"hello":2,"goodbye":98.53},{"rooms_seats":160,"hello":2,"goodbye":98.53},{"rooms_seats":190,"hello":1,"goodbye":98.53},{"rooms_seats":114,"hello":1,"goodbye":98.53},{"rooms_seats":200,"hello":2,"goodbye":98.52},{"rooms_seats":99,"hello":2,"goodbye":98.52},{"rooms_seats":375,"hello":1,"goodbye":49.27},{"rooms_seats":325,"hello":1,"goodbye":49.27},{"rooms_seats":275,"hello":1,"goodbye":49.27},{"rooms_seats":265,"hello":1,"goodbye":49.27},{"rooms_seats":257,"hello":1,"goodbye":49.27},{"rooms_seats":240,"hello":1,"goodbye":49.27},{"rooms_seats":225,"hello":1,"goodbye":49.27},{"rooms_seats":224,"hello":1,"goodbye":49.27},{"rooms_seats":205,"hello":1,"goodbye":49.27},{"rooms_seats":183,"hello":1,"goodbye":49.27},{"rooms_seats":155,"hello":1,"goodbye":49.27},{"rooms_seats":154,"hello":1,"goodbye":49.27},{"rooms_seats":131,"hello":1,"goodbye":49.27},{"rooms_seats":112,"hello":1,"goodbye":49.27},{"rooms_seats":106,"hello":1,"goodbye":49.27},{"rooms_seats":102,"hello":1,"goodbye":49.27},{"rooms_seats":75,"hello":1,"goodbye":49.27},{"rooms_seats":56,"hello":1,"goodbye":49.27},{"rooms_seats":55,"hello":1,"goodbye":49.27},{"rooms_seats":51,"hello":1,"goodbye":49.27},{"rooms_seats":503,"hello":1,"goodbye":49.26},{"rooms_seats":442,"hello":1,"goodbye":49.26},{"rooms_seats":426,"hello":1,"goodbye":49.26},{"rooms_seats":280,"hello":1,"goodbye":49.26},{"rooms_seats":260,"hello":1,"goodbye":49.26},{"rooms_seats":250,"hello":1,"goodbye":49.26},{"rooms_seats":236,"hello":1,"goodbye":49.26},{"rooms_seats":228,"hello":1,"goodbye":49.26},{"rooms_seats":188,"hello":1,"goodbye":49.26},{"rooms_seats":187,"hello":1,"goodbye":49.26},{"rooms_seats":167,"hello":1,"goodbye":49.26},{"rooms_seats":144,"hello":1,"goodbye":49.26},{"rooms_seats":136,"hello":1,"goodbye":49.26},{"rooms_seats":125,"hello":1,"goodbye":49.26},{"rooms_seats":123,"hello":1,"goodbye":49.26},{"rooms_seats":88,"hello":1,"goodbye":49.26},{"rooms_seats":84,"hello":1,"goodbye":49.26},{"rooms_seats":76,"hello":1,"goodbye":49.26},{"rooms_seats":74,"hello":1,"goodbye":49.26},{"rooms_seats":66,"hello":1,"goodbye":49.26},{"rooms_seats":63,"hello":1,"goodbye":49.26},{"rooms_seats":62,"hello":1,"goodbye":49.26},{"rooms_seats":58,"hello":1,"goodbye":49.26},{"rooms_seats":53,"hello":1,"goodbye":49.26}]}

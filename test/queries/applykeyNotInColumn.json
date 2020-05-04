@@ -1,0 +1,33 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "goodbye"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "hello": {
+                        "MAX": "courses_avg"
+                    }
+                },
+                {
+                    "goodbye": {
+                        "MIN": "courses_avg"
+                    }
+                }
+            ]
+        }},
+        "isQueryValid": true,
+        "result":[{"courses_dept":"aanb","goodbye":94.44},{"courses_dept":"adhe","goodbye":90.02},{"courses_dept":"anat","goodbye":91.67},{"courses_dept":"anth","goodbye":90.92},{"courses_dept":"apbi","goodbye":91.86},{"courses_dept":"apsc","goodbye":90.2},{"courses_dept":"arst","goodbye":90.27},{"courses_dept":"arth","goodbye":90.33},{"courses_dept":"astr","goodbye":91.25},{"courses_dept":"atsc","goodbye":92},{"courses_dept":"audi","goodbye":90.11},{"courses_dept":"babs","goodbye":91.38},{"courses_dept":"bams","goodbye":90.23},{"courses_dept":"bioc","goodbye":90.1},{"courses_dept":"biof","goodbye":91.5},{"courses_dept":"biol","goodbye":90.17},{"courses_dept":"bmeg","goodbye":90.9},{"courses_dept":"bota","goodbye":90.71},{"courses_dept":"ccst","goodbye":93.67},{"courses_dept":"ceen","goodbye":90.4},{"courses_dept":"cell","goodbye":90.25},{"courses_dept":"chbe","goodbye":90.21},{"courses_dept":"chem","goodbye":90.43},{"courses_dept":"chil","goodbye":90.5},{"courses_dept":"civl","goodbye":90.06},{"courses_dept":"cnps","goodbye":90.02},{"courses_dept":"cohr","goodbye":90.46},{"courses_dept":"comm","goodbye":92.45},{"courses_dept":"cons","goodbye":90.1},{"courses_dept":"cpsc","goodbye":90.11},{"courses_dept":"crwr","goodbye":90.8},{"courses_dept":"dent","goodbye":90.25},{"courses_dept":"dhyg","goodbye":90.03},{"courses_dept":"eced","goodbye":90.43},{"courses_dept":"econ","goodbye":90.07},{"courses_dept":"edcp","goodbye":90.06},{"courses_dept":"edst","goodbye":90.06},{"courses_dept":"educ","goodbye":90.07},{"courses_dept":"eece","goodbye":90.07},{"courses_dept":"elec","goodbye":91.83},{"courses_dept":"eosc","goodbye":90.08},{"courses_dept":"epse","goodbye":90.03},{"courses_dept":"etec","goodbye":90.03},{"courses_dept":"fipr","goodbye":96.4},{"courses_dept":"fish","goodbye":90.2},{"courses_dept":"fnh","goodbye":90.45},{"courses_dept":"food","goodbye":90.68},{"courses_dept":"fopr","goodbye":90.44},{"courses_dept":"frst","goodbye":90.13},{"courses_dept":"germ","goodbye":92.25},{"courses_dept":"gpp","goodbye":93.04},{"courses_dept":"gsat","goodbye":90.29},{"courses_dept":"hgse","goodbye":90.29},{"courses_dept":"hinu","goodbye":91},{"courses_dept":"hist","goodbye":93},{"courses_dept":"hunu","goodbye":91.33},{"courses_dept":"isci","goodbye":90.44},{"courses_dept":"ital","goodbye":91.5},{"courses_dept":"itst","goodbye":92.75},{"courses_dept":"kin","goodbye":90.05},{"courses_dept":"larc","goodbye":92.07},{"courses_dept":"lfs","goodbye":90.83},{"courses_dept":"libe","goodbye":90.19},{"courses_dept":"libr","goodbye":90.75},{"courses_dept":"ling","goodbye":92.25},{"courses_dept":"lled","goodbye":90.1},{"courses_dept":"math","goodbye":90.24},{"courses_dept":"mech","goodbye":90.17},{"courses_dept":"medg","goodbye":90.1},{"courses_dept":"medi","goodbye":90.6},{"courses_dept":"micb","goodbye":90.33},{"courses_dept":"midw","goodbye":90.62},{"courses_dept":"mine","goodbye":90.13},{"courses_dept":"mtrl","goodbye":90.14},{"courses_dept":"musc","goodbye":90.08},{"courses_dept":"name","goodbye":90.75},{"courses_dept":"nrsc","goodbye":90.67},{"courses_dept":"nurs","goodbye":90.06},{"courses_dept":"obst","goodbye":90.33},{"courses_dept":"onco","goodbye":90.58},{"courses_dept":"path","goodbye":90.11},{"courses_dept":"pcth","goodbye":90.07},{"courses_dept":"phar","goodbye":90.02},{"courses_dept":"phil","goodbye":90.33},{"courses_dept":"phrm","goodbye":92.06},{"courses_dept":"phth","goodbye":90.03},{"courses_dept":"phys","goodbye":90.2},{"courses_dept":"plan","goodbye":90.08},{"courses_dept":"psyc","goodbye":90.06},{"courses_dept":"rhsc","goodbye":90.5},{"courses_dept":"rsot","goodbye":90.39},{"courses_dept":"russ","goodbye":90.17},{"courses_dept":"sans","goodbye":90.29},{"courses_dept":"soil","goodbye":90.71},{"courses_dept":"sowk","goodbye":90.06},{"courses_dept":"span","goodbye":91.6},{"courses_dept":"spph","goodbye":90.11},{"courses_dept":"stat","goodbye":90.29},{"courses_dept":"surg","goodbye":90.13},{"courses_dept":"thtr","goodbye":90.14},{"courses_dept":"zool","goodbye":90.2}]}
